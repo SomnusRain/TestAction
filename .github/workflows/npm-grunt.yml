@@ -15,10 +15,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2  #安装node.js
         with:
-          node-version: '18'
+          node-version: '18.14.0'
           
       - name: Install Dependency       
         run: |
+          npm install
+          npm install request
           node ./Tata.js  #脚本存在根目录scripts文件夹下
  
 
