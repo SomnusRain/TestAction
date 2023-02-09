@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:   
-    - cron: '11 15 * * 4'   #国际标准时间，北京时间+8，即下午1点钟
+    - cron: '18 7 * * 4'   #国际标准时间，北京时间+8，即下午1点钟
  
 jobs:
   run-csjs:
