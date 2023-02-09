@@ -4,7 +4,8 @@ on:
     branches:
       - main
   schedule:   
-    - cron: '18 7 * * 4'   #国际标准时间，北京时间+8，即下午1点钟
+    - cron: '35 7 * * 4'   #国际标准时间，北京时间+8
+    - cron: '0 9 * * 5'   #国际标准时间，北京时间+8
  
 jobs:
   run-csjs:
@@ -22,6 +23,10 @@ jobs:
           npm install
           npm install request
       - name: run script
+        if: github.event.schedule == '35 7 * * 4'
         run: node ./Tata.js  
+      - name: run script
+        if: github.event.schedule == '0 9 * * 5'
+        run: node ./Friday.js  
  
 
