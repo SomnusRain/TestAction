@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:   
-    - cron: '0 5 * * *'   #国际标准时间，北京时间+8，即下午1点钟
+    - cron: '11 15 * * 4'   #国际标准时间，北京时间+8，即下午1点钟
  
 jobs:
   run-csjs:
@@ -13,14 +13,15 @@ jobs:
       - uses: actions/checkout@main  #采用main分支下的
            
       - name: Setup Node.js
-        uses: actions/setup-node@v2  #安装node.js
+        uses: actions/setup-node@v3  #安装node.js
         with:
-          node-version: '18.14.0'
+          node-version: '19.x'
           
       - name: Install Dependency       
         run: |
           npm install
           npm install request
-          node ./Tata.js  #脚本存在根目录scripts文件夹下
+      - name: run script
+        run: node ./Tata.js  
  
 
