@@ -10,11 +10,12 @@ var cat_user=[
     ['王佳','+86-13916196141'],
     ['刘云','+86-15335881616'],
     ['王斌斌','+86-13818409964'],
-    ['孔德龙','+86-15900606903']
+    ['孔德龙','+86-15900606903'],
+    ['武文杰','+86-15210601097']
 ]
 var index = Math.floor(parseInt(d_now - d_start) / 1000 / 60 / 60 / 24 / 7) % cat_user.length
 
-index=(index+4) % cat_user.length
+index=(index+3) % cat_user.length
 console.log(index,cat_user[index])
 let synsRequestData={
     "msgtype": "markdown",
