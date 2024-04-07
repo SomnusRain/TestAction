@@ -5,7 +5,6 @@ var d_start = new Date('2021/11/01 00:00:00');
 var d_now = new Date()
 var cat_user=[
     ['何立军','+86-13395055857'],
-    ['刘磊','+86-13236590650'],
     ['周盛','+86-15026843859'],
     ['王佳','+86-13916196141'],
     ['刘云','+86-15335881616'],
@@ -15,7 +14,7 @@ var cat_user=[
 ]
 var index = Math.floor(parseInt(d_now - d_start) / 1000 / 60 / 60 / 24 / 7) % cat_user.length
 
-index=(index+3) % cat_user.length
+index=(index) % cat_user.length
 console.log(index,cat_user[index])
 let synsRequestData={
     "msgtype": "markdown",
