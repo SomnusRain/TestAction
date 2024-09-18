@@ -20,7 +20,7 @@ let synsRequestData={
     "msgtype": "markdown",
     "markdown": { 
         "title": "tata 来了",
-        "text": `[^_^] tata: 这周拜托了@${cat_user[index][1]}  \r\n ---------- \r\n - 每天记得给tata添饭偶 \r\n - 每天记得给tata查看饮水机 \r\n - 每天记得给tata查看猫厕所 \r\n - 心情好可以塔塔打赏零食偶`},
+        "text": `[^_^] tata: 这周拜托了@${cat_user[index][1]}  \r\n ---------- \r\n - 每周记得给tata添饭偶 \r\n - 每天记得给tata查看饮水机 \r\n - 每天记得给tata查看猫厕所 \r\n - 关注塔塔指甲，及时修剪 \r\n - 心情好可以带塔塔运动减肥`},
         "at": { "atMobiles": [cat_user[index][1]], "isAtAll": false}
 };
 console.log(synsRequestData,index)
